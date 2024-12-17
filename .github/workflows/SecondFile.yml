@@ -1,0 +1,18 @@
+name: First Workflow
+
+on:
+  push:
+  workflow_dispatch:
+ 
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: First Step
+        run: echo "First Workflow"
+  second-job:
+    runs-on: windows-latest
+    steps:
+     - name: Second step
+       run: echo "Seccond Workflow"
+    
